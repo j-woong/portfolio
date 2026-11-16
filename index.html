@@ -763,7 +763,7 @@ textarea{width:100%;min-height:72px;resize:vertical;font-family:var(--body);font
 
   // ---------- guestbook ----------
   // GUESTBOOK_API에 서버 주소가 있으면 Spring 방명록 API를, 비어 있으면 Claude 페이지의 저장소를 쓴다
-  const GUESTBOOK_API = '';
+  const GUESTBOOK_API = 'https://port-0-portfolio-guestbook-api-mvkld73mde317772.sel3.cloudtype.app';
   let db = null, user = null, uid = null, canWrite = null, entries = [], gbLoaded = false, gbError = '', gbBusy = false;
   const gbMsg = $('gbMsg'), gbNick = $('gbNick');
   gbMsg.addEventListener('input', () => { $('gbCount').textContent = gbMsg.value.length + ' / 140'; });
